@@ -1,0 +1,325 @@
+/* -------- KLEUREN --------*/
+/*
+ *  ROZE: #ff7bac;
+ *  BLAUW: #39aea9;
+*/
+/* -------- BASIS --------*/
+
+
+/*
+ * CSS RESET 
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i {
+    font-family: "Ionicons";
+}
+
+html {
+    background-color: #fff;
+    font-family: 'Open Sans', Sans-Serif;
+}
+
+p {
+    color: #333;
+    padding: 10px;
+}
+
+h2,h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: auto;
+    border: solid 1px #39aea9;
+    margin-bottom: 20px;
+    background-color: #39aea9;
+    width: 300px;
+}
+
+.hrRoze {
+    width: 70%;
+    border: solid 1px #ff7bac;
+    background-color: #ff7bac;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+
+
+
+/*-------- CLEARFIX --------
+ * https://css-tricks.com/snippets/css/clear-fix/
+ */
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*-------- NAVIGATIE INHOUD --------*/
+
+li {
+    float: left;
+    margin-right: 40px;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', cursive;
+    color: #39aea9;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #fff;
+    transition: border-color 0.3s ease;
+}
+
+.active {
+    border-bottom: 2px solid #ff7bac;
+    
+}
+
+li a:hover {
+    border-bottom: 2px solid #ff7bac;
+}
+
+.row {
+    margin: 40px;
+}
+
+.span-1of2 {
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
+
+.span-2of2 {
+    display: inline-block;
+    width: 30%;
+    float: left;
+}
+
+
+
+
+/*-------- NAVIGATIE --------*/
+
+.nav-bar {
+    position: fixed;
+    box-shadow: 0px 0px 30px -10px #333;
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+    z-index: 999;
+}
+
+.nav-bar img {
+    width: 92px;
+    margin: 10px 40px;
+    display: block;
+    float: left;
+    clear: both;
+}
+
+.nav-bar ul {
+    display: inline-block;
+    float: right;
+}
+
+nav {
+    background-color: #fff;
+    height: 30px;
+    line-height: -40px;
+}
+
+/*-------- HEADER --------*/
+
+header {
+    background-image: url(IMG/pexels-photo-322070.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans', cursive;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+}
+
+.hero-text {
+    position: absolute;
+    width: 0 auto;
+    top: 50%;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.hero-text p {
+    color: #fff;
+}
+
+/* -------- OVER -------- */
+
+#over {
+    padding: 20px 0px;
+    text-align: center;
+    
+}
+
+.intro {
+    margin: 0 auto;
+    max-width: 700px;
+}
+#over p {
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+/* -------- DIENSTEN -------- */
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 200;
+    padding-top: 20px;
+}
+
+#diensten {
+    position: relative;
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(IMG/pexels-photo-346796.jpeg);
+	background-size: cover;
+	color: #fff;
+    text-align: center;
+    background-position: center;
+}
+
+.diensten-box {
+    display: inline-block;
+	background-color: #fff;
+	border-radius: 5px;
+	width: 40%;
+    padding: 10px;
+	box-sizing: border-box;
+    float: left;
+    margin: 5%;
+}
+
+.diensten-box div {
+    margin: 20px;
+}
+
+.vraag-aan, .meerinfo {
+    margin: 20px auto 0 auto;
+    color: #39aea9;
+    border: solid 1px #39aea9;
+    border-radius: 50px;
+    padding: 5px 15px;
+    background-color: transparent;
+}
+
+.vraag-aan:hover,
+.meerinfo:hover 
+{
+    background-color: #ff7bac;
+    color: #fff;
+    border-color: #ff7bac;
+    transition: 0.5s ease;
+}
+
+/* -------- CONTACT -------- */
+
+#contact {
+    padding: 20px 0px;
+    text-align: center;   
+}
+
+form {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    width: 400px;
+    height: 500px;
+    border: 1.5px solid #ff7bac;
+    border-radius: 20px;
+}
+
+label {
+    display: block;
+    clear: both;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+input {
+    border-width: 1px;
+    border-style:  solid;
+    border-color: #333;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    height:30px;
+}
+
+textarea {
+    border: 1px, solid #333;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    height:30px;
+}
+
+textarea {
+    display: block;
+    height: 150px;
+    max-height: 150px;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+}
+
+/* -------- FOOTER -------- */
+
+#footer {
+    display: block;
+    background-color: #333;
+    height: 100px;
+    width: 100%;
+}
+
+#footer p {
+    color: #888;
+}
